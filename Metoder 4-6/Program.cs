@@ -6,17 +6,22 @@ namespace Metoder_4_6
     {
         static void Main(string[] args)
         {
-            int startNumber = 0;
+            int startNumber = 1;
             int endNumber = 10;
-            int startUpDown = 0;
+            int startUpDown = 1;
             int midUpDown = 32;
             int endUpDown = 16;
             string countUpResult = CountUp(startNumber,endNumber);
             string countDownResult = CountDown(startNumber,endNumber);
             string countUpDownResult = CountUpDown(startUpDown, midUpDown, endUpDown);
-
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("1 to 10 \n");
             Console.WriteLine(countUpResult);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("10 to 1\n");
             Console.WriteLine(countDownResult);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("0 to 32 to 16\n");
             Console.WriteLine(countUpDownResult);
         }
         public static string CountUp(int start, int stop)
